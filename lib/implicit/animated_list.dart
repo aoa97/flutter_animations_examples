@@ -16,8 +16,12 @@ class AnimatedListExample extends HookWidget {
     }
 
     removeItem(int index) {
+      final String item = list.value[index];
       list.value.removeAt(index);
-      listKey.currentState?.removeItem(index, (context, animation) => const SizedBox());
+      listKey.currentState?.removeItem(
+        index,
+        (context, animation) => SizeTransition(sizeFactor: animation, child: _ListTileItem(label: item)),
+      );
     }
 
     return MainScaffold(
@@ -30,15 +34,27 @@ class AnimatedListExample extends HookWidget {
           initialItemCount: list.value.length,
           itemBuilder: (context, index, animation) => SizeTransition(
             sizeFactor: animation,
-            child: ListTile(
-              title: Text(list.value[index]),
-              trailing: IconButton(
-                icon: const Icon(Icons.delete),
-                onPressed: () => removeItem(index),
-              ),
-            ),
+            child: _ListTileItem(label: list.value[index], onDelete: () => removeItem(index)),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _ListTileItem extends StatelessWidget {
+  final String label;
+  final void Function()? onDelete;
+
+  const _ListTileItem({required this.label, this.onDelete});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(label),
+      trailing: IconButton(
+        icon: const Icon(Icons.delete),
+        onPressed: onDelete,
       ),
     );
   }
