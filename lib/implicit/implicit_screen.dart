@@ -16,22 +16,19 @@ class ImplicitScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(10),
-      child: Column(
-        children: [
-          MButton(title: "AnimatedAlign", page: AnimatedAlignExample()),
-          MButton(title: "AnimatedContainer", page: AnimatedContainerExample()),
-          MButton(title: "AnimatedText", page: AnimatedTextExample()),
-          MButton(title: "AnimatedOpacity", page: AnimatedOpacityExample()),
-          MButton(title: "AnimatedPadding", page: AnimatedPaddingExample()),
-          MButton(title: "AnimatedPhysicalModel", page: AnimatedPhysicalModelExample()),
-          MButton(title: "AnimatedPositioned/AnimatedPositionedDirectional", page: AnimatedPositionedExample()),
-          MButton(title: "AnimatedCrossFade(2 Trans)", page: AnimatedCrossFadeExample()),
-          MButton(title: "AnimatedSwitcher(Multi Trans)", page: AnimatedSwitcherExample()),
-          MButton(title: "AnimatedList", page: AnimatedListExample()),
-        ],
-      ),
+    return const Column(
+      children: [
+        MButton(title: "AnimatedAlign", page: AnimatedAlignExample()),
+        MButton(title: "AnimatedContainer", page: AnimatedContainerExample()),
+        MButton(title: "AnimatedText", page: AnimatedTextExample()),
+        MButton(title: "AnimatedOpacity", page: AnimatedOpacityExample()),
+        MButton(title: "AnimatedPadding", page: AnimatedPaddingExample()),
+        MButton(title: "AnimatedPhysicalModel", page: AnimatedPhysicalModelExample()),
+        MButton(title: "AnimatedPositioned/AnimatedPositionedDirectional", page: AnimatedPositionedExample()),
+        MButton(title: "AnimatedCrossFade(2 Trans)", page: AnimatedCrossFadeExample()),
+        MButton(title: "AnimatedSwitcher(Multi Trans)", page: AnimatedSwitcherExample()),
+        MButton(title: "AnimatedList", page: AnimatedListExample()),
+      ],
     );
   }
 }

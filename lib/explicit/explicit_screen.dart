@@ -15,21 +15,18 @@ class ExplicitScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(10),
-      child: Column(
-        children: [
-          MButton(title: "TweenAnimationBuilder", page: TweenAnimationBuilderExample()),
-          MButton(title: "AnimatedBuilder", page: AnimatedBuilderExample()),
-          MButton(title: "Controlled Animation", page: AnimationControllerExample()),
-          MButton(title: "PositionedTransition", page: PositionedTransitionExample()),
-          MButton(title: "SizeTransition", page: SizeTransitionExample()),
-          MButton(title: "RotationTransition", page: RotationTransitionExample()),
-          MButton(title: "FadeTransition", page: FadeTransitionExample()),
-          MButton(title: "DefaultTextStyleTransition", page: TextTransitionExample()),
-          MButton(title: "IndexedStackTransition", page: IndexedStackTransitionExample()),
-        ],
-      ),
+    return const Column(
+      children: [
+        MButton(title: "TweenAnimationBuilder", page: TweenAnimationBuilderExample()),
+        MButton(title: "AnimatedBuilder", page: AnimatedBuilderExample()),
+        MButton(title: "Controlled Animation", page: AnimationControllerExample()),
+        MButton(title: "PositionedTransition", page: PositionedTransitionExample()),
+        MButton(title: "SizeTransition", page: SizeTransitionExample()),
+        MButton(title: "RotationTransition", page: RotationTransitionExample()),
+        MButton(title: "FadeTransition", page: FadeTransitionExample()),
+        MButton(title: "DefaultTextStyleTransition", page: TextTransitionExample()),
+        MButton(title: "IndexedStackTransition", page: IndexedStackTransitionExample()),
+      ],
     );
   }
 }

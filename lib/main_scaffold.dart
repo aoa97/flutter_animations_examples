@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainScaffold extends StatelessWidget {
-  final String title;
+  final String? title;
   final Widget body;
   final void Function()? onAction;
   final Widget? floatingAction;
@@ -11,7 +11,7 @@ class MainScaffold extends StatelessWidget {
 
   const MainScaffold({
     super.key,
-    required this.title,
+    this.title,
     required this.body,
     this.onAction,
     this.floatingAction,
@@ -24,7 +24,7 @@ class MainScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      appBar: AppBar(title: Text(title)),
+      appBar: title != null ? AppBar(title: Text(title!)) : null,
       floatingActionButton: () {
         if (floatingAction != null) {
           return floatingAction;

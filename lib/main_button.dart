@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:playground/extensions.dart';
 
 class MButton extends StatelessWidget {
   final String title;
-  final Widget page;
-  const MButton({super.key, required this.title, required this.page});
+  final Widget? page;
+  final void Function()? onTap;
+  const MButton({super.key, required this.title, this.page, this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return FilledButton(
-      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => page)),
+      onPressed: onTap ?? () => context.push(MaterialPageRoute(builder: (_) => page!)),
       style: FilledButton.styleFrom(
         backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.white,

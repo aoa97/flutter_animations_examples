@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:playground/explicit/explicit_screen.dart';
 import 'package:playground/implicit/implicit_screen.dart';
+import 'package:playground/page_transitions/page_transtions_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -25,7 +26,8 @@ class MainScreen extends HookWidget {
     final tabs = useMemoized(
       () => {
         const Tab(text: "Implicit"): const ImplicitScreen(), // AnimationFoo
-        const Tab(text: "Explicit"): const ExplicitScreen(), // FooTransition,
+        const Tab(text: "Explicit"): const ExplicitScreen(), // Tween, AnimatedBuilder, FooTransition, ...
+        const Tab(text: "Page"): const PageTransitionsScreen(),
       },
       [],
     );
@@ -37,7 +39,10 @@ class MainScreen extends HookWidget {
           title: const Text("Animations Examples"),
           bottom: TabBar(tabs: [...tabs.keys]),
         ),
-        body: TabBarView(children: [...tabs.values]),
+        body: Padding(
+          padding: const EdgeInsets.all(10),
+          child: TabBarView(children: [...tabs.values]),
+        ),
       ),
     );
   }
