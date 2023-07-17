@@ -7,6 +7,7 @@ class MainScaffold extends StatelessWidget {
   final Widget? floatingAction;
   final bool? fullView;
   final Icon? actionIcon;
+  final Color? backgroundColor;
 
   const MainScaffold({
     super.key,
@@ -16,11 +17,13 @@ class MainScaffold extends StatelessWidget {
     this.floatingAction,
     this.fullView = false,
     this.actionIcon,
+    this.backgroundColor,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       appBar: AppBar(title: Text(title)),
       floatingActionButton: () {
         if (floatingAction != null) {

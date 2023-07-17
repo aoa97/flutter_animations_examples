@@ -7,9 +7,9 @@ class MButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return FilledButton(
       onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => page)),
-      style: ElevatedButton.styleFrom(
+      style: FilledButton.styleFrom(
         backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.white,
         minimumSize: const Size(double.infinity, 40),

@@ -3,6 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:playground/main_scaffold.dart';
 
 //* CrossFade => Cinematic Term => 1 scene gradually fades into another
+//* Can be replaced with SizedBox & acheive show / hide scenario
 
 class AnimatedCrossFadeExample extends HookWidget {
   const AnimatedCrossFadeExample({super.key});
