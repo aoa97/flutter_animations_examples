@@ -29,9 +29,11 @@ class AnimatedCrossFadeExample extends HookWidget {
 }
 
 _sceneItem({required String asset, required Color bg}) {
-  return Container(
-    color: bg,
-    height: double.infinity,
-    child: Image.asset("assets/$asset.png"),
-  );
+  return Builder(builder: (context) {
+    return Container(
+      color: bg,
+      height: MediaQuery.sizeOf(context).height,
+      child: Image.asset("assets/$asset.png"),
+    );
+  });
 }
