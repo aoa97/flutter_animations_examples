@@ -24,7 +24,7 @@ class MainScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      appBar: title != null ? AppBar(title: Text(title!)) : null,
+      appBar: AppBar(title: title != null ? Text(title!) : null),
       floatingActionButton: () {
         if (floatingAction != null) {
           return floatingAction;
