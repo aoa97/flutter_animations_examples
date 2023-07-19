@@ -17,8 +17,8 @@ class AnimatedCrossFadeExample extends HookWidget {
       title: "AnimatedCrossFade",
       onAction: () => toggleAnimation.value = !toggleAnimation.value,
       body: AnimatedCrossFade(
-        firstChild: _sceneItem(asset: "tom", bg: Colors.yellow),
-        secondChild: _sceneItem(asset: "jerry", bg: Colors.red),
+        firstChild: const _SceneItem(asset: "tom", bg: Colors.yellow),
+        secondChild: const _SceneItem(asset: "jerry", bg: Colors.red),
         crossFadeState: toggleAnimation.value ? CrossFadeState.showSecond : CrossFadeState.showFirst,
         duration: const Duration(seconds: 1),
         firstCurve: Curves.easeIn,
@@ -28,12 +28,24 @@ class AnimatedCrossFadeExample extends HookWidget {
   }
 }
 
-_sceneItem({required String asset, required Color bg}) {
-  return Builder(builder: (context) {
+class _SceneItem extends StatelessWidget {
+  final String asset;
+  final Color bg;
+
+  const _SceneItem({
+    required this.asset,
+    required this.bg,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
       color: bg,
       height: MediaQuery.sizeOf(context).height,
-      child: Image.asset("assets/$asset.png"),
+      width: double.infinity,
+      child: UnconstrainedBox(
+        child: Image.asset("assets/$asset.png", width: 250, height: 220),
+      ),
     );
-  });
+  }
 }
