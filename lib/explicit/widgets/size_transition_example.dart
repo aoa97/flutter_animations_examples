@@ -18,7 +18,6 @@ class SizeTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "SizeTransition",
-      backgroundColor: Colors.red,
       floatingAction: Wrap(
         spacing: 30,
         children: [

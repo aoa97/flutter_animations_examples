@@ -13,7 +13,6 @@ class RotationTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "RotationTransition",
-      backgroundColor: Colors.blueGrey,
       floatingAction: Wrap(
         spacing: 30,
         children: [

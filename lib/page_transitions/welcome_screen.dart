@@ -7,7 +7,6 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainScaffold(
-      backgroundColor: Colors.white.withOpacity(.8),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

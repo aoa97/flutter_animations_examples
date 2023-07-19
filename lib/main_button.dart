@@ -12,8 +12,6 @@ class MButton extends StatelessWidget {
     return FilledButton(
       onPressed: onTap ?? () => context.push(MaterialPageRoute(builder: (_) => page!)),
       style: FilledButton.styleFrom(
-        backgroundColor: Theme.of(context).primaryColor,
-        foregroundColor: Colors.white,
         minimumSize: const Size(double.infinity, 40),
       ),
       child: Text(title, style: const TextStyle(fontSize: 12)),

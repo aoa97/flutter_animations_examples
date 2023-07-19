@@ -9,8 +9,8 @@ class TextTransitionExample extends HookWidget {
   Widget build(BuildContext context) {
     final controller = useAnimationController(duration: const Duration(seconds: 1));
     final textStyleAnimation = TextStyleTween(
-      begin: const TextStyle(fontSize: 18, fontWeight: FontWeight.normal, color: Colors.black),
-      end: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.teal),
+      begin: const TextStyle(fontSize: 24, fontWeight: FontWeight.normal, color: Colors.white),
+      end: const TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.amber),
     ).animate(controller);
 
     return MainScaffold(

@@ -19,7 +19,6 @@ class AnimatedSwitcherExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedSwitcher",
-      backgroundColor: Colors.white.withOpacity(.8),
       floatingAction: Wrap(
         spacing: 30,
         children: [

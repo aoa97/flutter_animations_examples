@@ -31,7 +31,7 @@ class AnimatedTextExample extends HookWidget {
         child: AnimatedDefaultTextStyle(
           style: TextStyle(
             fontSize: isLargeFont.value ? 48 : 24,
-            color: isLargeFont.value ? Theme.of(context).primaryColor : Colors.black,
+            color: isLargeFont.value ? Colors.amber : Colors.white,
             fontWeight: isLargeFont.value ? FontWeight.bold : FontWeight.normal,
             shadows: [
               BoxShadow(

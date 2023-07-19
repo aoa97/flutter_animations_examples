@@ -27,7 +27,6 @@ class PositionedTransitionExample extends HookWidget {
 
     return MainScaffold(
       fullView: true,
-      backgroundColor: Colors.white.withOpacity(.8),
       title: "PositionedTransition",
       floatingAction: Wrap(
         spacing: 30,

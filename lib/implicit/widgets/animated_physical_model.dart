@@ -22,7 +22,7 @@ class AnimatedPhysicalModelExample extends HookWidget {
           clipBehavior: Clip.antiAlias,
           elevation: toggleAnimation.value ? 5 : 80,
           shadowColor: Colors.black,
-          color: toggleAnimation.value ? Theme.of(context).primaryColor : Colors.transparent,
+          color: toggleAnimation.value ? Colors.amber : Colors.transparent,
           child: AnimatedOpacity(
             curve: Curves.linear,
             opacity: toggleAnimation.value ? 1 : .5,
