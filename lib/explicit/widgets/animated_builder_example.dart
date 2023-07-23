@@ -14,6 +14,7 @@ class AnimatedBuilderExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedBuilderExample",
+      githubPath: "/explicit/widgets/animated_builder_example.dart",
       body: AnimatedBuilder(
         animation: controller,
         builder: (context, child) {

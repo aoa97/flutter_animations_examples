@@ -15,6 +15,7 @@ class TextTransitionExample extends HookWidget {
 
     return MainScaffold(
       title: "DefaultTextStyleTransition",
+      githubPath: "/explicit/widgets/text_style_transition_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

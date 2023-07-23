@@ -11,6 +11,7 @@ class AnimatedPaddingExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedPadding",
+      githubPath: "/implicit/widgets/animated_padding.dart",
       onAction: () => toggleAnimation.value = !toggleAnimation.value,
       body: GridView.count(
         crossAxisCount: 2,

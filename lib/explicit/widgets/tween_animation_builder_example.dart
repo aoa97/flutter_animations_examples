@@ -8,6 +8,7 @@ class TweenAnimationBuilderExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return MainScaffold(
       title: "TweenAnimationBuilderExample",
+      githubPath: "/explicit/widgets/tween_animation_builder_example.dart",
       body: TweenAnimationBuilder(
         tween: ColorTween(begin: Colors.blue, end: Colors.green),
         duration: const Duration(seconds: 2),

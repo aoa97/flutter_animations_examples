@@ -28,6 +28,7 @@ class PositionedTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "PositionedTransition",
+      githubPath: "/explicit/widgets/positioned_transition_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

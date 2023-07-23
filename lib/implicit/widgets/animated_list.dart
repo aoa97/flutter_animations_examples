@@ -26,6 +26,7 @@ class AnimatedListExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedList",
+      githubPath: "/implicit/widgets/animated_list.dart",
       onAction: addItem,
       actionIcon: const Icon(Icons.add),
       body: Center(

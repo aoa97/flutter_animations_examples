@@ -11,6 +11,7 @@ class AnimatedTextExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedText",
+      githubPath: "/implicit/widgets/animated_text.dart",
       floatingAction: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

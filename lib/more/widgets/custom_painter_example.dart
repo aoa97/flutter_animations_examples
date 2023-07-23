@@ -16,6 +16,7 @@ class CustomPainterExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "CustomPainterExample",
+      githubPath: "/more/widgets/custom_painter_example.dart",
       body: Center(
         child: AnimatedBuilder(
           animation: controller,

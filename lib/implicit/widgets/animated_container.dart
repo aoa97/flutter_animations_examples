@@ -11,6 +11,7 @@ class AnimatedContainerExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedContainer",
+      githubPath: "/implicit/widgets/animated_container.dart",
       onAction: () => toggleAnimation.value = !toggleAnimation.value,
       body: Center(
         child: AnimatedContainer(

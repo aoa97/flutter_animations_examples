@@ -21,6 +21,7 @@ class AnimatedPositionedExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "AnimatedPositioned",
+      githubPath: "/implicit/widgets/animated_positioned.dart",
       onAction: () async {
         toggleAnimation.value = !toggleAnimation.value;
         await Future.delayed(const Duration(seconds: 1));

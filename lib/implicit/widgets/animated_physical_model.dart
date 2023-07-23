@@ -13,6 +13,7 @@ class AnimatedPhysicalModelExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedPhysicalModel",
+      githubPath: "/implicit/widgets/animated_physical_model.dart",
       onAction: () => toggleAnimation.value = !toggleAnimation.value,
       body: Center(
         child: AnimatedPhysicalModel(

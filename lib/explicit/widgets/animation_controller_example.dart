@@ -33,6 +33,7 @@ class AnimationControllerExample extends HookWidget {
 
     return MainScaffold(
       title: "Basic Controlled Animation",
+      githubPath: "/explicit/widgets/animation_controller_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         direction: Axis.vertical,

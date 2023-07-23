@@ -24,6 +24,7 @@ class IndexedStackTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "IndexedStackTransition",
+      githubPath: "/explicit/widgets/indexed_stack_transition_example.dart",
       onAction: () {
         index.value = index.value == 2 ? 0 : index.value + 1;
         controller.reset();

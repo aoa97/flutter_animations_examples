@@ -15,6 +15,7 @@ class AnimatedCrossFadeExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "AnimatedCrossFade",
+      githubPath: "/implicit/widgets/animated_cross_fade.dart",
       onAction: () => toggleAnimation.value = !toggleAnimation.value,
       body: AnimatedCrossFade(
         firstChild: const _SceneItem(asset: "tom", bg: Colors.yellow),

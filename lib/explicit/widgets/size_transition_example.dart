@@ -18,6 +18,7 @@ class SizeTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "SizeTransition",
+      githubPath: "/explicit/widgets/size_transition_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

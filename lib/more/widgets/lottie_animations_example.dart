@@ -12,6 +12,7 @@ class LottieAnimationsExample extends StatelessWidget {
     return MainScaffold(
       fullView: true,
       title: "Lottie Animations",
+      githubPath: "/more/widgets/lottie_animations_example.dart",
       body: Center(
         child: Lottie.asset('assets/lottie/waving_character.json'),
       ),

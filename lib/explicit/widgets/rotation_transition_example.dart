@@ -13,6 +13,7 @@ class RotationTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "RotationTransition",
+      githubPath: "/explicit/widgets/rotation_transition_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

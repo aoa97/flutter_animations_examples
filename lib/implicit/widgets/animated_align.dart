@@ -29,6 +29,7 @@ class AnimatedAlignExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedAlign",
+      githubPath: "/implicit/widgets/animated_align.dart",
       onAction: () => index.value = index.value + 1,
       body: Stack(
         children: [

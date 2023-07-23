@@ -19,6 +19,7 @@ class AnimatedSwitcherExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedSwitcher",
+      githubPath: "/implicit/widgets/animated_switcher.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

@@ -13,6 +13,7 @@ class FadeTransitionExample extends HookWidget {
     return MainScaffold(
       fullView: true,
       title: "FadeTransition",
+      githubPath: "/explicit/widgets/fade_transition_example.dart",
       floatingAction: Wrap(
         spacing: 30,
         children: [

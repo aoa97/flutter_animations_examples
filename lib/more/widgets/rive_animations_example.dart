@@ -12,6 +12,7 @@ class RiveAnimationsExample extends StatelessWidget {
     return const MainScaffold(
       fullView: true,
       title: "Rive Animations",
+      githubPath: "/more/widgets/rive_animations_example.dart",
       body: RiveAnimation.asset('assets/rive/quality_time.riv', fit: BoxFit.cover),
     );
   }

@@ -11,6 +11,7 @@ class AnimatedOpacityExample extends HookWidget {
 
     return MainScaffold(
       title: "AnimatedOpacity",
+      githubPath: "/implicit/widgets/animated_opacity.dart",
       onAction: () => isVisible.value = !isVisible.value,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
